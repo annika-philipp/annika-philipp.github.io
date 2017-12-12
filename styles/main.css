@@ -1,5 +1,5 @@
 .header {
-    background-color: teal;
+    background-color: #09819a;
     height: 120px;
     border-bottom: 20px;
 }
@@ -13,7 +13,7 @@ h1 {
 }
 
 .footer {
-    background-color: teal;
+    background-color: #09819a;
     height: 60px;
 
 }
