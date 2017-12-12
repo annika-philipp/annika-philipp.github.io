@@ -1,12 +1,16 @@
-
-
-
 .header {
     background-color: teal;
     height: 120px;
     border-bottom: 20px;
 }
 
+h1 {
+    color: #bbbaba;
+    padding-top: 40px;
+    padding-left: 20px;
+    font-size: auto;
+    text-transform: uppercase;
+}
 
 .footer {
     background-color: teal;
@@ -23,38 +27,25 @@
 
 }
 
-/*------- Main Styles -------*/
-
 .main {
     margin-top: 20px;
 }
 
-h1 {
-    color: #bbbaba;
-    padding-top: 40px;
-    padding-left: 20px;
-    font-size: auto;
-    text-transform: uppercase;
-}
 
-h2 {
+h2.posttitle {
     color: #000000;
     text-align: center;
     font-size: 3rem;
     font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
 }
 
-.blog image {
+img.blogimg {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 20px;
-    max-width: 80%;
-    height: 80%;
+    
   }
 
-
-
-
-/*--------- Media Queries -----------*/
