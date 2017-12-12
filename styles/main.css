@@ -69,3 +69,12 @@ p {
     color: #504f4f; 
     font-size: 2rem;
 }
+
+img.t3 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px; 
+    width: 150px;
+    padding-bottom: 30px;
+}
