@@ -33,7 +33,7 @@ h1 {
 
 
 h2.posttitle {
-    color: #000000;
+    color: #504f4f;;
     text-align: center;
     font-size: 2.5rem;
     font-weight: bold;
@@ -49,3 +49,21 @@ img.blogimg {
     
   }
 
+.post {
+    padding: 20px;
+}
+
+h2 {
+    color: #504f4f;
+    font-weight: bold;
+
+}
+
+h4 {
+    color: #504f4f;
+}
+
+p {
+    color: #504f4f; 
+    font-size: 2rem;
+}
