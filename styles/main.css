@@ -83,3 +83,10 @@ img.t3 {
     width: 150px;
     padding-bottom: 30px;
 }
+
+
+@media only screen and (max-width: 768px) {
+    [class*="one-third column blog post"] {
+        width: 100%;
+}
+}
