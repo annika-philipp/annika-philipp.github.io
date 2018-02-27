@@ -1,61 +1,81 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Motivation</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
-        <link rel="stylesheet" href="../styles/main.css"> 
-    </head>
+<html lang="en">
+<head>
+  <title>Annika's Blog - Motivation</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
 
-    <body>
-        <div class="container header">
-            <div class="row">
-                <h1>Annika's Blog</h1>
-            </div>
-        </div>
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <!-- button for mobile viewing, collapse opens and closes -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="../img/annikablog.png"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <!-- unordered list navbar that will be displayed at the right-->
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#technical">Technical</a></li>
+          <li class="active"><a href="../index.html#cultural">Cultural</a></li>
+          <li><a href="../index.html#projects">Projects</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-        <div class="container post">
-            <div class="row">
-                <h2>Motivation</h2>
-            </div>
-            <div class="row">
-                <h4>How does life look through the 'pleasure, passion and purpose' lens?</h4>
-                <p>
-                    All are important and have their place in the attempt to live a happy life. Personally I'd say everything
-                    in balance. Ideally all 3 sit closely together by fulfilling my underlying values and interests. 
-                </p>
-                <h4>What are my core values and what do I stand for?</h4>
-                <p>
-                    My personal core values would include, family and friends, access to nature, healthy mind and body, freedom of time and
-                    trust in my own self (resilience).
-                </p>
-                <p> 
-                    In a wider sense I value/stand for social justice, life-long learning, enabling others, reciprocity and sustainability.
-                </p>
-                <h4>How did I find the resilience ideas and meditation exercise?</h4>
-                <p>
-                    Being resilient is a disposition that's really important to me and that I've practiced for quite some time (I guess initially
-                    uknowingly and later purposefully). I did not end up doing the meditation exercise, meditation just isn't my thing. Also, I'm pretty
-                    good at letting go, so I found myself artificially creating tensions when thinking about a negative experience when really there were none - 
-                    at which stage I decided to just not do the meditation.
-                </p>
-                <p>    
-                    To me negative experiences obviously suck, but they are when real learning happens and where most of my strength and personal growth 
-                    comes from (oh hi, resilience definition), which is probably why they don't linger too long as emotions in my memory.
-                </p>
-            </div>
-            <a class="button" href="../index.html">Home</a>
-        </div>
-        <div class="container footer">
-            <div class="footer">
-                <div class="row">
-                    <div class="12 columns footer">
-                        <p class="footer">All typos are there on purpose...</p>
-                    </div>
-                </div>
-            </div>  
-        </div>
-    </body>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 post-body">
+        <h3 class="post-title">Motivation</h3>
+          <img src="../img/motivation.jpg" class="img-responsive pull-left blog-img" alt="motivation">
+          <h4>How does life look through the 'pleasure, passion and purpose' lens?</h4>
+          <p>
+            All are important and have their place in the attempt to live a happy life. Personally I'd say everything
+            in balance. Ideally all 3 sit closely together by fulfilling my underlying values and interests. 
+          </p>
+          <h4>What are my core values and what do I stand for?</h4>
+          <p>
+            My personal core values would include, family and friends, access to nature, healthy mind and body, freedom of time and
+            trust in my own self (resilience).
+          </p>
+          <p> 
+            In a wider sense I value/stand for social justice, life-long learning, enabling others, reciprocity and sustainability.
+          </p>
+          <h4>How did I find the resilience ideas and meditation exercise?</h4>
+          <p>
+            Being resilient is a disposition that's really important to me and that I've practiced for quite some time (I guess initially
+            uknowingly and later purposefully). I did not end up doing the meditation exercise, meditation just isn't my thing. Also, I'm pretty
+            good at letting go, so I found myself artificially creating tensions when thinking about a negative experience when really there were none - 
+            at which stage I decided to just not do the meditation.
+          </p>
+          <p>    
+            To me negative experiences obviously suck, but they are when real learning happens and where most of my strength and personal growth 
+            comes from (oh hi, resilience definition), which is probably why they don't linger too long as emotions in my memory.
+          </p>
+          <br>
+          <a class="btn" href="../index.html">Home</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="container-fluid text-center">
+    <div class="row">
+      <div class="col-lg-12">
+        <p>Copyright 2017 - 2018 Annika Philipp</p>
+      </div>
+    </div>
+  </footer>
+</body>
 </html>

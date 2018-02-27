@@ -1,55 +1,72 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Emotional Intelligence</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
-        <link rel="stylesheet" href="../styles/main.css"> 
-    </head>
+<html lang="en">
+<head>
+  <title>Annika's Blog - Emotional Intelligence</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
 
-    <body>
-        <div class="container header">
-            <div class="row">
-                <h1>Annika's Blog</h1>
-            </div>
-        </div>
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <!-- button for mobile viewing, collapse opens and closes -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="../img/annikablog.png"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <!-- unordered list navbar that will be displayed at the right-->
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#technical">Technical</a></li>
+          <li class="active"><a href="../index.html#cultural">Cultural</a></li>
+          <li><a href="../index.html#projects">Projects</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-        <div class="container post">
-            <div class="row">
-                <h2>Emotional Intelligence</h2>
-            </div>
-            <div class="row">
-                <h4>What learnings did I take from Search Inside Yourself?</h4> 
-                <p>
-                    All of the topics mentioned in this chapter have been part of my professional work over the 
-                    last few years, so emotional intelligence, neuroplasticity/neurology, leadership and 
-                    mindfulness aren’t new topics for me. I liked how the author highlighted the fact that 
-                    emotional intelligence is not an innate ability but a learned skill (although some people 
-                    tend to naturally already have a greater awareness of this than others). On a personal level, 
-                    having been exposed to these theories for quite some time, I am reminded of how emotional 
-                    intelligence is an ongoing project, sometimes I am better at managing my emotions than at other 
-                    times, sometimes my awareness of stress (or equally happiness) factors is better tuned than others.
-                </p>  
-                <h4>Two minutes of mindfulness</h4> 
-                <p> 
-                    This is something I’ve struggled with in the past, but in the spirit of making tiny changes, 
-                    something I am going to give a shot for the next wee while. I’ve always found running and 
-                    solely focussing on my breath easier than sitting still and calming my thoughts. 2 minutes should 
-                    be doable though… 
-                </p>  
-            </div>
-            <a class="button" href="../index.html">Home</a>
-        </div>
-        <div class="container footer">
-            <div class="footer">
-                <div class="row">
-                    <div class="12 columns footer">
-                        <p class="footer">All typos are there on purpose...</p>
-                    </div>
-                 </div>
-            </div>  
-        </div>    
-    </body>
- </html>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 post-body">
+        <h3 class="post-title">Emotional Intelligence</h3>
+        <img src="../img/ei.jpg" class="img-responsive blog-img" alt="emotional intelligence">
+        <h4>What learnings did I take from Search Inside Yourself?</h4> 
+        <p>
+          All of the topics mentioned in this chapter have been part of my professional work over the                 last few years, so emotional intelligence, neuroplasticity/neurology, leadership and 
+          mindfulness aren’t new topics for me. I liked how the author highlighted the fact that 
+          emotional intelligence is not an innate ability but a learned skill (although some people 
+          tend to naturally already have a greater awareness of this than others). On a personal level, 
+          having been exposed to these theories for quite some time, I am reminded of how emotional                 intelligence is an ongoing project, sometimes I am better at managing my emotions than at other 
+          times, sometimes my awareness of stress (or equally happiness) factors is better tuned than others.
+        </p>  
+        <h4>Two minutes of mindfulness</h4> 
+        <p>                    
+          This is something I’ve struggled with in the past, but in the spirit of making tiny changes, 
+          something I am going to give a shot for the next wee while. I’ve always found running and 
+          solely focussing on my breath easier than sitting still and calming my thoughts. 2 minutes should                 be doable though… 
+        </p>  
+        <br>
+        <a class="btn" href="../index.html">Home</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="container-fluid text-center">
+    <div class="row">
+      <div class="col-lg-12">
+        <p>Copyright 2017 - 2018 Annika Philipp</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

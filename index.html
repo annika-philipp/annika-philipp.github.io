@@ -1,165 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Annika's Blog</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
-    <link rel="stylesheet" href="styles/main.css"> 
-  </head>
-  <body>
-        <div class="container header">
-            <div class="row">
-                <h1>Annika's Blog</h1>
-            </div>
+<head>
+  <title>Annika Blogs</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse" id="mainNav">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <!-- button for mobile viewing, collapse opens and closes -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="img/annikablog.png"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <!-- unordered list navbar that will be displayed at the right-->
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a class="nav-link" href="#technical">Technical</a></li>
+          <li><a class="nav-link" href="#cultural">Cultural</a></li>
+          <li><a class="nav-link" href="#projects">Projects</a></li>
+        <!--  <li><a href="#">Contact</a></li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="header">
+    <div class="hero-image" id="hero-image">
+      <img src="img/hero.jpg" />
+    </div>
+  </div>
+
+
+
+
+  <!-- Start Main Section -->
+
+ 
+  <div class="container">
+    <div class="row text-center" id="technical">
+      <h3>Technical Posts</h3>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <img src="img/scope.jpg" class="img-responsive main">
+        <h4>Scope</h4>
+        <p>
+            What is Scope and how does it work in JavaScript? There are two types of scope in JavaScript which determine 
+            how variables can be accessed: global scope: variables that are declared outside of functions. They can be 
+            accessed from anywhere by any function or script within the code. local scope: variables that are being declared 
+            inside a function.
+        </p>
+        <a href="blog/t6-scope.html">read more...</a>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <img src="img/language.jpg" class="img-responsive main"> <!-- use of img-responsive here, img will always stay resp. within column -->
+        <h4>JavaScript Language</h4>
+        <p>
+          A post in which I attempt to describe all the use cases for 
+          </p>
+          <ul>
+            <li>parentheses</li>
+            <li>brackets</li>
+            <li>braces</li>
+            <li>and quotes</li>
+          </ul>
+          <p>Let's not kid ourselves, I've probably missed a trezillion of uses...</p>
+        </p>
+        <a href="blog/t6-js-language.html">read more...</a>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <img src="img/problemsolving.jpg" class="img-responsive main">  
+        <h4>Problem Solving</h4>
+        <p>
+          That time when I wrote one of my previous blog posts, saved the post file, updated my index file and index image, 
+          pushed to GitHub - and nothing happened. No update. Nothing. I kept hitting the refresh button (more and more vigorously),
+           cursing the slow internet (because if in doubt look for the fault in anything but your own actions right?).
+        </p>
+        <a href="blog/t5-problem-solving.html">read more...</a>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <img src="img/basics.jpg" class="img-responsive main"> <!-- use of img-responsive here, img will always stay resp. within column -->
+        <h4>JavaScript Basics</h4>
+        <p>
+            How does JavaScript compare to HTML and CSS? JavaScript is used to program the behaviour of web pages. Going back to the 
+            earlier house analogy of HTML being the structure of a house and CSS being in charge of the design and layout, then its 
+            inhabitants would be JavaScript, that is being able to take commands like "get up", or "if this - do that". 
+        </p>
+        <a href="blog/t4-javascript-basics.html">read more...</a>
+      </div>
+    </div>
+  </div> <!-- End of Main Technical Section/Start of Hidden Dropdown Section -->
+
+  <div class="container">
+    <div class="row text-center">
+      <h4><a href="#hiddenTech" data-toggle="collapse">This is good stuff, show me more...</a></h4>
+      </div>
+      <div id="hiddenTech" class="collapse">
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <img src="img/web.jpg" class="img-responsive main">
+            <h4>Design to Web</h4>
+            <p>
+                What is a responsive site and why is responsiveness important? A responsive site is designed with the multitude of 
+                devices people use to look at website in mind. Different devices mean different screen sizes and a resonsive site 
+                keeps that in mind by having images and content adjust to the screen size. 
+            </p>
+            <a href="blog/t3-design-to-web-blog.html">read more...</a>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <img src="img/ttp2.jpg" class="img-responsive main"> <!-- use of img-responsive here, img will always stay resp. within column -->
+            <h4>Tech Talk Part 2</h4>
+            <p>A post in which I answer these questions in full detail:
+            </p>
+            <ul>
+              <li> What is grid based design? </li>
+              <li>What are responsive webpages?</li>
+              <li> And what is semantic structure?</li>
+            </ul> 
+            <p>Actually this is a very short post...</p>
+            <a href="blog/t2-html-css-dom-p2.html">read more...</a>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <img src="img/ttp1.jpg" class="img-responsive main">  
+            <h4>Tech Talk Part 1</h4>
+            <p>
+               The house analogy seems really helpful when thinking about how html, css and the DOM interact. HTML gives the house structure (house - website; rooms - pages; 
+               beds, tables, chairs etc - objects and so on). CSS would be the design of this, how things are decorated and arranged. DOM - 
+               well I'm crap when it comes to analogies, but others have described it as a blueprint or project manager and I think that works. 
+            </p>
+            <a href="blog/t2-html-css-dom-p1.html">read more...</a>
+          </div>
         </div>
-
-        <div class="container main">
-            <div class="row">
-                <div class="one-third column blog post">
-                    <a href="blog/c1-reflection-blog.html">
-                        <img src="images/index/green-index.jpg" alt="placeholder" class="index-img">
-                        <h2 class="post-title">Reflection</h2>
-                    </a> 
-                </div>
-
-                <div class="one-third column blog post">
-                    <a href="blog/c1-time-and-habits-blog.html">
-                      <img src="images/index/pink-index.jpg" alt="placeholder" class="index-img">
-                      <h2 class="post-title">Time and Habits</h2>
-                    </a> 
-                </div>
-
-                <div class="one-third column blog post">
-                    <a href="blog/c2-emotional-intelligence.html">
-                      <img src="images/index/teal-index.jpg" alt="placeholder" class="index-img">
-                      <h2 class="post-title">Emotional Intelligence</h2>
-                    </a> 
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="one-third column blog post">
-                    <a href="blog/t2-html-css-dom-p1.html">
-                      <img src="images/index/red-index.jpg" alt="placeholder" class="index-img">
-                      <h2 class="post-title">Tech Talk pt 1</h2>
-                    </a> 
-                </div>
-    
-                <div class="one-third column blog post">
-                    <a href="blog/t2-html-css-dom-p2.html">
-                      <img src="images/index/orange-index.jpg" alt="placeholder" class="index-img">
-                      <h2 class="post-title">Tech Talk pt 2</h2>
-                    </a> 
-                </div>
-    
-                <div class="one-third column blog post">
-                    <a href="blog/t3-design-to-web-blog.html">
-                      <img src="images/index/yellow-index.jpg" alt="placeholder" class="index-img">
-                      <h2 class="post-title">Design to Web</h2>
-                    </a> 
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="one-third column blog post">
-                    <a href="blog/c3-meditation-process.html">
-                      <img src="images/index/teal2-index.jpg" alt="placeholder" class="index-img">
-                      <h2 class="post-title">Meditation</h2>
-                    </a> 
-                </div>
-
-                <div class="one-third column blog post">
-                    <a href="blog/t4-javascript-basics.html">
-                      <img src="images/index/rose-index.jpg" alt="placeholder" class="index-img">
-                      <h2 class="post-title">JavaScript Basics</h2>
-                    </a> 
-                </div>
-
-                <div class="one-third column blog post">
-                    <a href="blog/c4-daily-mindfulness.html">
-                      <img src="images/index/purple-index.jpg" alt="placeholder" class="index-img">
-                      <h2 class="post-title">Daily Mindfulness</h2>
-                    </a> 
-                </div>
-            </div>
-
-            <div class="row">
-               <div class="one-third column blog post">
-                    <a href="blog/c5-self-confidence.html">
-                        <img src="images/index/emerald-index.jpg" alt="placeholder" class="index-img">
-                        <h2 class="post-title">Self-confidence</h2>
-                    </a> 
-                </div>
-     
-                <div class="one-third column blog post">
-                    <a href="blog/t5-problem-solving.html">
-                        <img src="images/index/purple2-index.jpg" alt="placeholder" class="index-img">
-                        <h2 class="post-title">Problem-solving</h2>
-                    </a> 
-                </div>
-
-                <div class="one-third column blog post">
-                    <a href="blog/t6-js-language.html">
-                        <img src="images/index/brown-index.jpg" alt="placeholder" class="index-img">
-                        <h2 class="post-title">JavaScript Language</h2>
-                    </a> 
-                </div>
-
-            </div> 
-            
-            <div class="row">
-                <div class="one-third column blog post">
-                    <a href="blog/c6-control.html">
-                        <img src="images/index/orange2-index.jpg" alt="placeholder" class="index-img">
-                        <h2 class="post-title">Control</h2>
-                    </a> 
-                </div>
+      </div>
+  </div>
   
+  <hr>
 
-                <div class="one-third column blog post">
-                    <a href="blog/c7-motivation.html">
-                        <img src="images/index/pink2-index.jpg" alt="placeholder" class="index-img">
-                        <h2 class="post-title">Motivation</h2>
-                    </a> 
-                </div>
-     
-                <div class="one-third column blog post">
-                    <a href="blog/t6-scope.html">
-                        <img src="images/index/pink-index.jpg" alt="placeholder" class="index-img">
-                        <h2 class="post-title">Scope</h2>
-                    </a> 
-                </div>
-            
-            </div> 
-
-            <div class="row">
-                    <div class="one-third column blog post">
-                        <a href="blog/c8-connecting.html">
-                            <img src="images/index/blue-index.jpg" alt="placeholder" class="index-img">
-                            <h2 class="post-title">Connecting</h2>
-                        </a> 
-                    </div>
-         
-                    <div class="one-third column blog post">
-                        <a href="blog/c9-leadership.html">
-                            <img src="images/index/yellow-index.jpg" alt="placeholder" class="index-img">
-                            <h2 class="post-title">Leadership</h2>
-                        </a> 
-                    </div>
-                     
-                </div> 
-            
+  <div class="container" id="cultural">
+    <div class="row text-center">
+    <h3>Cultural Posts</h3>
+    </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <img src="img/leadership.jpg" class="img-responsive main">
+          <h4>Leadership</h4>
+          <p>
+            My experience of compassionate (or not) leadership? This is an interesting question since for the past 10 years 
+            I've been working for a professional development company with an extremely strong focus on teaching compassionate/empathetic 
+            leadership. Having a leader who walks the talk has had an immense input on what I value, how I treat others and how I want to be treated.
+          </p>
+          <a href="blog/c9-leadership.html">read more...</a>
         </div>
-
-        <div class="container footer">
-            <div class="row">
-                <div class="12 columns footer">
-                    <p class="footer">All typos are there on purpose...</p>
-                </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <img src="img/connection.jpg" class="img-responsive main">
+          <h4>Connecting</h4>
+          <p>
+            To me, trust, sincerety and empathy are really important, but I've got to be honest, this book ('Search Inside Yourself')
+            isn't really for me. I know what its message is, but there are parts of it that don't sit right with me and I'm hoping that 
+            by chapter 8 it will finally start talking about how important boundary setting is and that there are structural (or interpersonal) 
+            barriers to situations.
+          </p>
+          <a href="blog/c8-connecting.html">read more...</a>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <img src="img/motivation.jpg" class="img-responsive main">  
+          <h4>Motivation</h4>
+          <p>
+            How does life look through the 'pleasure, passion and purpose' lens? All are important and have their place 
+            in the attempt to live a happy life. Personally, I'd say 'everything in balance'. Ideally all 3 sit closely 
+            together and help to fulfil my underlying values and interests. What are my core values and what do I stand for?
+          </p>
+          <a href="blog/c7-motivation.html">read more...</a>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <img src="img/control.jpg" class="img-responsive main">
+          <h4>Control</h4>
+          <p>
+            When programming, what are some of my triggers? What causes a disproportionate emotional response?
+            At this stage it's either getting stuck when not understanding what I'm being asked to do (mainly 
+            resulting from not understanding the lingo), when I understand the question but cannot figure out what 
+            to do or when I think I have finally figured it out and ... nada. 
+          </p>
+          <a href="blog/c6-control.html">read more...</a>
+        </div>
+      </div>
+    </div> <!-- End of Main Cultural Section/Start of Hidden Dropdown Section -->
+  
+    <div class="container">
+      <div class="row text-center">
+        <h4><a href="#hidden" data-toggle="collapse">Surely you've written more than just 4 posts...</a></h4>
+        </div>
+        <div id="hidden" class="collapse">
+          <div class="row extra">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+              <img src="img/confidence.jpg" class="img-responsive main"> <!-- use of img-responsive here, img will always stay resp. within column -->
+              <h4>Self-confidence</h4>
+              <p>
+                 Self awareness and mindfulness are quite similar in the sense that both allow us to reflect on or take note off our 
+                 emotions, mental and/or physical state in the present moment. Both are done in a non-judgemental/neutral way and both 
+                 are learnable and definitely get easier the more we practice. 
+              </p>
+              <a href="blog/c5-self-confidence.html">read more...</a>
             </div>
-        </div>  
-        
-    </body>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+              <img src="img/awareness.jpg" class="img-responsive main">  
+              <h4>Daily Mindfulness</h4>
+              <p>
+                  What did I learn from my 'mindfulness conversation'? How did the other person find it? It felt somewhat odd having to fill 
+                  a certain amount of time just talking when I actaully felt like getting some feedback from the other person, having my own 
+                  words then fed back and rephrased through her words was quite interesting and somehwat insightful. 
+              </p>
+              <a href="blog/c4-daily-mindfulness.html">read more...</a>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+              <img src="img/meditation.jpg" class="img-responsive main"> <!-- use of img-responsive here, img will always stay resp. within column -->
+              <h4>Meditation</h4>
+              <p>
+                  How did the 'process over product' concept affect the way I tackled the site redesign and rebuild? It had a huge impact.
+                  I was confident that this week's learning had given me the tools and resources to do this redesign/rebuild. I started
+                  in a very structured way, spending quite a bit of time thinking and hand drawing/writing before actually coding.
+              </p>
+              <a href="blog/c3-meditation-process.html">read more...</a>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+              <img src="img/ei.jpg" class="img-responsive main">
+              <h4>Emotional Intelligence</h4>
+              <p>
+                All of the topics mentioned in this chapter in 'Search Inside Yourself' have been part of my professional work over the last few years, 
+                so emotional intelligence, neuroplasticity/neurology, leadership and mindfulness aren’t new topics for me. I liked how the author highlighted 
+                the fact that emotional intelligence is not an innate ability but a learned skill.
+              </p>
+              <a href="blog/c2-emotional-intelligence.html">read more...</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+              <img src="img/time.jpg" class="img-responsive main"> <!-- use of img-responsive here, img will always stay resp. within column -->
+              <h4>Time and Habits</h4>
+              <p>
+                  In terms of habits, coming from a professional development background I've always been a big believer in Carol Dweck's work on mindsets, 
+                  Csikszentmihalyi's concept of 'Flow' and the importance of celebrating success (be it tiny changes or achieving an end-product). Regarding 
+                  time and organising time, I've timeboxed before albeit with varying degrees of success. 
+              </p>
+              <a href="blog/c1-time-and-habits-blog.html">read more...</a>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+              <img src="img/problem.jpg" class="img-responsive main">
+              <h4>First Impressions</h4>
+              <p>
+                  Shit's getting real!
+              </p>
+              <a href="blog/c1-reflection-blog.html">read more...</a>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="container" id="projects">
+      <div class="row text-center">
+          <h3>Projects</h3>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-6">
+          <h4>Minesweeper</h4>
+          <a href="https://annika-philipp.github.io/minesweeper/">
+          <img src="img/minesweeper.png" class="img-responsive main">
+          </a>
+        </div>
+        <div class="col-md-6">
+          <h4>JS Calculator</h4>
+          <a href="https://annika-philipp.github.io/js-calculator/">
+          <img src="img/calc.png" class="img-responsive main"> <!-- use of img-responsive here, img will always stay resp. within column -->
+         </a>
+        </div>
+      </div>
+    </div>
+
+    
+    
+
+  <!-- Start Footer -->
+
+  <footer class="container-fluid text-center">
+    <div class="row">
+      <div class="col-lg-12">
+        <p>Copyright 2017 - 2018 Annika Philipp</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
 </html>
