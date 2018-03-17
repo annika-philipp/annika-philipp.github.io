@@ -107,6 +107,18 @@
       color: #D5D5D5;
       text-decoration: none; 
     }
+
+    .play {
+      height: 500px;
+    }
+
+    dot { 
+      position: absolute; 
+      display: block;
+      border: 2px solid red; 
+      border-radius: 50px;
+      height: 100px; 
+      width: 100px; }
   
 
     @media (min-width: 992px) {
