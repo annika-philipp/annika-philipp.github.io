@@ -115,7 +115,7 @@
     dot { 
       position: absolute; 
       display: block;
-      border: 2px solid blue;
+      border: 2px solid;
       border-radius: 50px;
       height: 100px; 
       width: 100px; }
