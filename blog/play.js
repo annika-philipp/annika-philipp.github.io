@@ -1,3 +1,14 @@
+
+
+/*
+window.addEventListener("touchstart", update);
+window.addEventListener("touchmove", update);
+window.addEventListener("touchend", update);
+*/
+window.addEventListener("click", update);
+window.addEventListener("dblclick", update);
+window.addEventListener("contextmenu", update);
+
 function update(event) {
     for (let dot; dot = document.querySelector("dot");) {
       dot.remove();
@@ -7,9 +18,18 @@ function update(event) {
       let dot = document.createElement("dot");
       dot.style.left = (pageX - 50) + "px";
       dot.style.top = (pageY - 50) + "px";
+/*      dot.style.color = ("getRandomColor") */
       document.body.appendChild(dot);
     }
   }
-  window.addEventListener("touchstart", update);
-  window.addEventListener("touchmove", update);
-  window.addEventListener("touchend", update);
+
+
+  /*
+  function getRandomColor() {
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+  for (var i = 0; i < 6; i++ ) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}*/
