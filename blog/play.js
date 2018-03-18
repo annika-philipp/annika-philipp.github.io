@@ -12,7 +12,7 @@ function update(event) {
       let dot = document.createElement("dot");
       dot.style.left = (pageX - 50) + "px";
       dot.style.top = (pageY - 50) + "px";
-      dot.style.color = "green";
+      dot.style.border = "green";
       /* getRandomColor() {
         var letters = '0123456789ABCDEF';
         var color = '#';
