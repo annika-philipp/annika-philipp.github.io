@@ -5,9 +5,9 @@ window.addEventListener("touchstart", update);
 window.addEventListener("touchmove", update);
 window.addEventListener("touchend", update);
 */
-document.addEventListener("click", update);
-document.addEventListener("dblclick", update);
-document.addEventListener("contextmenu", update);
+window.addEventListener("click", update);
+window.addEventListener("dblclick", update);
+window.addEventListener("contextmenu", update);
 
 function update(event) {
     for (let dot; dot = document.querySelector("dot");) {
